@@ -10,7 +10,8 @@ node{
         ])
 }
 
-fabric8UITemplate{
+fabric8UINode{
+//fabric8UITemplate{
     //dockerNode{
         timeout(time: 1, unit: 'HOURS') {
             ws {
