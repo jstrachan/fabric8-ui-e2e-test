@@ -10,7 +10,7 @@ node{
         ])
 }
 
-fabric8UINode{
+fabric8UITestNode{
     timeout(time: 1, unit: 'HOURS') {
         ws {
             checkout scm
