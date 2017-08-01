@@ -11,7 +11,7 @@ node{
 }
 
 fabric8UITemplate{
-    dockerNode{
+    //dockerNode{
         timeout(time: 1, unit: 'HOURS') {
             ws {
                 checkout scm
@@ -23,5 +23,5 @@ fabric8UITemplate{
                 }
             }
         }
-    }
+    //}
 }
