@@ -18,9 +18,8 @@ fabric8UITemplate{
                 readTrusted 'release.groovy'
                 def pipeline = load 'release.groovy'
 
-                    container('ui'){
-                        pipeline.ci()
-                    }
+                container('ui'){
+                    pipeline.ci()
                 }
             }
         }
