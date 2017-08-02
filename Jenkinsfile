@@ -18,6 +18,8 @@ fabric8UITestNode{
             def pipeline = load 'release.groovy'
 
             container('ui'){
+                
+                echo "about to run the CI job!"
                 pipeline.ci()
             }
         }
