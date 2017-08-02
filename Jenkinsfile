@@ -13,14 +13,15 @@ node{
 fabric8UITestNode{
     timeout(time: 1, unit: 'HOURS') {
         ws {
-            checkout scm
-            readTrusted 'release.groovy'
-            def pipeline = load 'release.groovy'
-
             container('ui'){
-                
-                echo "about to run the CI job!"
-                pipeline.ci()
+                stage('functional test') {
+                    echo "about to run the CI job!"
+                    sh """
+                    git clone https://github.com/fabric8-ui/fabric8-ui.git &&
+                    cd fabric8-ui &&
+                    ./run_functional_tests.sh
+                    """
+                }
             }
         }
     }
