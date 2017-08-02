@@ -19,6 +19,7 @@ fabric8UITestNode{
                     sh """
                     git clone https://github.com/fabric8-ui/fabric8-ui.git &&
                     cd fabric8-ui &&
+                    npm install &&
                     ./run_functional_tests.sh
                     """
                 }
