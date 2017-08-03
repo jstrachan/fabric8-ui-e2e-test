@@ -21,6 +21,7 @@ fabric8UITestNode{
                     cd fabric8-ui &&
                     npm install &&
                     npm run build:dev &&
+                    npm run webdriver-manager && 
                     ./run_EE_tests.sh
                     """
                     archive "**/*.log"
