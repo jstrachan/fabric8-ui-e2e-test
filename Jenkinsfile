@@ -21,7 +21,7 @@ fabric8UITestNode{
                     cd fabric8-ui &&
                     npm install &&
                     npm run build:dev &&
-                    ./run_functional_tests.sh
+                    ./run_EE_tests.sh
                     """
                 }
             }
