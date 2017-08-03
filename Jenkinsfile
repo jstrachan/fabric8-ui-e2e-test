@@ -21,7 +21,8 @@ fabric8UITestNode{
                     cd fabric8-ui &&
                     npm install &&
                     npm run build:dev &&
-                    npm run webdriver-manager update && 
+                    export PATH=node_modules/protractor/bin:$PATH &&
+                    webdriver-manager update --versions.chrome 2.30 &&
                     ./run_EE_tests.sh
                     """
                     archive "**/*.log"
