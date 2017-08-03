@@ -26,6 +26,7 @@ fabric8UITestNode{
                     ./run_EE_tests.sh
                     """
                     archive "**/*.log"
+                    archive "fabric8-ui/target/screenshots/*.*"
                 }
             }
         }
