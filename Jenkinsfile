@@ -23,6 +23,7 @@ fabric8UITestNode{
                     npm run build:dev &&
                     ./run_EE_tests.sh
                     """
+                    archive "**/*.log"
                 }
             }
         }
